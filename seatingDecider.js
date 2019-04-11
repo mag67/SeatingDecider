@@ -131,7 +131,7 @@
         if(number%2===0){
             let tableRow1=document.createElement('tr');
             table.appendChild(tableRow1);
-                for(let i=1;i<number/2;++i){
+                for(let i=1;i<=number/2;++i){
                     let td=document.createElement('td');
                     td.innerText=name[i];
                     tableRow1.appendChild(td)
