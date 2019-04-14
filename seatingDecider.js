@@ -126,12 +126,12 @@
         table.setAttribute('border', 1)
         resultArea.appendChild(table);
 
-        //2列生成し1列あたりに人数の半分配席
-        //スパゲッティ
+//2列生成し1列あたりに人数の半分配席
+        
         if (number % 2 === 0) {
             let tableRow1 = document.createElement('tr');
             table.appendChild(tableRow1);
-            for (let i = 1; i <= number / 2; ++i) {
+            for (let i = 0; i <= (number / 2)-0.5; ++i) {
                 let td = document.createElement('td');
                 td.innerText = name[i];
                 tableRow1.appendChild(td)
@@ -146,7 +146,7 @@
         } else {
             let tableRow1 = document.createElement('tr');
             table.appendChild(tableRow1);
-            for (let i = 1; i <= (number / 2) + 0.5; ++i) {
+            for (let i = 0; i <= (number / 2); ++i) {
                 let td = document.createElement('td');
                 td.innerText = name[i];
                 tableRow1.appendChild(td)
